@@ -1,0 +1,18 @@
+name: Manually Deploy to Heroku
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.14
+        with:
+          heroku_api_key: HRKU-0f1e875f-51d6-4bc2-9c31-8dc3ef5d7446
+          heroku_app_name: dipaktxt926bot
+          heroku_email: shilpi0dehura@gmail.com
+          usedocker: true
+          docker_heroku_process_type: worker
+          stack: "container"
+          region: "eu"
