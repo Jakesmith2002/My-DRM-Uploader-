@@ -21,7 +21,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH" "bc79c3bea7a626887bdc0871eecf0327")
     BOT_TOKEN = os.environ.get("BOT_TOKEN" "6997850062:AAHWrgAFDhUqJZ_ymrJKxlH1N--HvjNcyxE")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "tg_bot")
-    DATABASE_URL = os.environ.get("DATABASE_URL", None "mongodb+srv://MRDAXX:MRDAXX@mrdaxx.prky3aj.mongodb.net/?retryWrites=true&w=majority")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://MRDAXX:MRDAXX@mrdaxx.prky3aj.mongodb.net/?retryWrites=true&w=majority")
     OWNER_ID = int(os.environ.get("OWNER_ID" "7081036509"))
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002336706271"))
     WEB_SERVER = is_enabled(os.environ.get("WEB_SERVER", "False"), False)
